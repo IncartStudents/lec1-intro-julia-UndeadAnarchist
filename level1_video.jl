@@ -12,7 +12,7 @@ typeof(my_name)
 my_answer = my_pi
 большие коммы
 =#
-sum = 3+7
+#=sum = 3+7
 a = 2
 b = 4
 typeof(a)
@@ -256,4 +256,11 @@ A=randn(3,3)
 
 Ashort=A[1:2,:]
 display(Ashort)
-Ashort\b[1:2]
+Ashort\b[1:2]=#
+
+i(a, b) = a + b
+add_int(a::Int, b::Int) = a + b
+
+add(5, 3)        # 8 (Int)
+add(2.5, 1.5)    # 4.0 (Float64)
+add_int(5, 3)    # 8 (только Int)
